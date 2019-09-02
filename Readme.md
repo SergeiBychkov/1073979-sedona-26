@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Сергей Бычков](https://up.htmlacademy.ru/htmlcss/26/user/1073979).
-* Наставник: `Дарья Клюхина` (https://htmlacademy.ru/profile/id125399).
+* Наставник: [Дарья Клюхина](https://htmlacademy.ru/profile/id125399).
 
 ---
 
