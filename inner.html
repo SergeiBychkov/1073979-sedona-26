@@ -17,12 +17,39 @@
   </nav>
 </header>
 <main>
-  <h1>Выбор жилья в Седоне</h1>
+  <h1 class="visually-hidden">Выбор жилья в Седоне</h1>
   <section>
-    <h2>Условия жилья</h2>
+    <h2 class="visually-hidden">Условия жилья</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <fieldset>
+        <legend>инфраструктура:</legend>
+        <input type="checkbox" id="swimming-pool" name="swimming-pool" checked>
+        <label for="swimming-pool">бассейн</label>
+        <input type="checkbox" id="parking" name="parking">
+        <label for="parking">парковка</label>
+        <input type="checkbox" id="wi-fi" name="wi-fi">
+        <label for="wi-fi">wi-fi</label>
+      </fieldset>
+      <fieldset>
+        <legend>тип жилья:</legend>
+        <input type="checkbox" id="hotel" name="hotel" checked>
+        <label for="hotel">гостиница</label>
+        <input type="checkbox" id="motel" name="motel" checked>
+        <label for="motel">мотель</label>
+        <input type="checkbox" id="apartments" name="apartments" checked>
+        <label for="apartments">апартаменты</label>
+      </fieldset>
+      <fieldset>
+        <legend>стоимость в сутки (р):</legend>
+        <input type="text" name="min" placeholder="от 0">
+        <input type="text" name="max" placeholder="до 3000">
+        <input type="range" min="1" max="3000" value="1" name="">
+        <button type="submit">показать</button>
+      </fieldset>
+    </form>
   </section>
   <section>
-    <h2>Список жилья</h2>
+    <h2 class="visually-hidden">Список жилья</h2>
   <ul>
     <li>
       <div>
@@ -86,9 +113,9 @@
     <p>#VISITSEDONA</p>
   </div>
   <div>
-    <a href="#">Твиттер <img src="img/twitter.svg" alt="twitter" width="17" height="15"> </a>
-    <a href="#">Фейсбук <img src="img/fb-icon.svg" alt="facebook" width="12" height="22"></a>
-    <a href="#">Ютуб <img src="img/youtube.svg" alt="youtube" width="20" height="16"></a>
+    <a href="#"><span class="visually-hidden">Твиттер</span> <img src="img/twitter.svg" alt="twitter" width="17" height="15"> </a>
+    <a href="#"><span class="visually-hidden">Фейсбук</span> <img src="img/fb-icon.svg" alt="facebook" width="12" height="22"></a>
+    <a href="#"><span class="visually-hidden">Ютуб</span> <img src="img/youtube.svg" alt="youtube" width="20" height="16"></a>
   </div>
   <a href="https://htmlacademy.ru/intensive/htmlcss">WEBSITE BY <img src="img/logo-htmlacademy.svg" alt="htmlAcademy" width="115" height="41" ></a>
 </footer>

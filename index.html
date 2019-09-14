@@ -17,11 +17,11 @@
     </nav>
   </header>
   <main>
-    <h1>Поиск жилья в Седоне</h1>
+    <h1 class="visually-hidden">Поиск жилья в Седоне</h1>
     <p>Седона - Небольшой городок в Аризоне, заслуживающий большего!</p>
     <p>Рассмотрим 5 причин, по которым Седона кручем, чем Гранд каньон!</p>
     <section>
-      <h2>Преимущества Седоны</h2>
+      <h2 class="visually-hidden">Преимущества Седоны</h2>
       <h3>Настоящий городок</h3>
       <p>№1</p>
       <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
@@ -61,12 +61,40 @@
       </ul>
     </section>
     <section>
-      <h2>Подбор отеля</h2>
+      <h2 class="visually-hidden">Подбор отеля</h2>
       <p>Заинтересовались?</p>
-      <p>Укажите предпологамые даты поездки,<br> И мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <p>Укажите предпологамые даты поездки, И мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <div>
       <img src="img/map.png" width="1200" height="593" alt="расположение города Седона на карте">
       </div>
+    </section>
+    <section>
+      <h2>поиск гостиницы в седоне</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div>
+        <label for="arrival-date">дата заезда:</label>
+        <input type="text" name="arrival-date" value="24 апреля 2017" id="arrival-date">
+          <button type="button"><img src="img/calendar.svg" aria-label="выбор даты заезды через календарь"></button>
+        </div>
+        <div>
+        <label for="departure-date">дата выезда:</label>
+        <input type="text" name="departure-date" value="4 июля 2017" id="departure-date">
+        <button type="button"><img src="img/calendar.svg" aria-label="выбор даты заезды через календарь"></button>
+        </div>
+        <div>
+          <label for="adults">взрослые:</label>
+          <button type="button" aria-label="убрать одного взрослого">-</button>
+          <input type="number" id="adults" value="2">
+          <button type="button" aria-label="добавить одного взрослого">+</button>
+        </div>
+        <div>
+          <label for="children">дети:</label>
+          <button type="button" aria-label="убрать одного ребенка">-</button>
+          <input type="number" id="children" value="0">
+          <button type="button" aria-label="добавить одного ребенка">+</button>
+        </div>
+        <button type="submit">найти</button>
+      </form>
     </section>
   </main>
   <footer>
@@ -74,9 +102,9 @@
     <p>#VISITSEDONA</p>
     </div>
     <div>
-        <a href="#">Твиттер <img src="img/twitter.svg" alt="twitter" width="17" height="15"> </a>
-        <a href="#">Фейсбук <img src="img/fb-icon.svg" alt="facebook" width="12" height="22"></a>
-        <a href="#">Ютуб <img src="img/youtube.svg" alt="youtube" width="20" height="16"></a>
+      <a href="#"><span class="visually-hidden">Твиттер</span> <img src="img/twitter.svg" alt="twitter" width="17" height="15"> </a>
+      <a href="#"><span class="visually-hidden">Фейсбук</span> <img src="img/fb-icon.svg" alt="facebook" width="12" height="22"></a>
+      <a href="#"><span class="visually-hidden">Ютуб</span> <img src="img/youtube.svg" alt="youtube" width="20" height="16"></a>
     </div>
     <a href="https://htmlacademy.ru/intensive/htmlcss">WEBSITE BY <img src="img/logo-htmlacademy.svg" alt="htmlAcademy" width="115" height="41" ></a>
   </footer>
