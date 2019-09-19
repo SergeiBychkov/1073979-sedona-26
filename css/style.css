@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 24px;
+  color: #000000;
+  background: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* хеддер */
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+  font-weight: 700;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+.site-navigation a:active {
+  color: #b2b2b2;
+}
+
+.current a{
+  color: #766357;
+}
+
+/* мэйн */
+.sedona-welcome {
+  height: 780px;
+  background-image: url("../img/intro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.preview {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+.reasons {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.main-features1 {
+  width: 33.4%;
+  height: 256px;
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.main-features2 {
+  width: 33.4%;
+  height: 256px;
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.gallery1 {
+  width: 66.6%;
+  height: 256px;
+  background-image: url("../img/city.jpg");
+  background-repeat: no-repeat;
+}
+
+.gallery2 {
+  width: 66.6%;
+  height: 256px;
+  background-image: url("../img/canyon.jpg");
+  background-repeat: no-repeat;
+}
+
+.features{
+text-align: center;
+}
+
+.features-list1,
+.features-list2 {
+  list-style: none;
+}
+
+.features-list2 {
+  background-color: #eeeeee;
+}
+
+.appointment {
+  text-align: center;
+}
+
+.button-active {
+  background-color: #766357;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  width: 568px;
+  height: 86px;
+}
+
+.button-active:hover {
+  background-color: #604e43;
+}
+
+.button-active:active {
+  color: #928a85;
+  background-color: #503e33;
+}
+
+.calendar {
+  fill: #cacaca;
+}
+.calendar:hover {
+  fill: #000000;
+}
+
+.calendar:active {
+  fill: #81b3d2;
+}
+
+.button-search {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.button-search:hover {
+  background-color: #669ec0;
+  color: #ffffff;
+}
+
+.button-search:active {
+  background-color: #5496bd;
+  color: #94b9d2;
+}
+/* футер */
+.social {
+  background-color: #81b3d2;
+}
+
+.social:hover {
+  background-color: #669ec0;
+}
+.social:active {
+  background-color: #5496bd;
+  fill: #88b6d1;
+}
+
+.button-academy:hover {
+  fill: #98c1da;
+}
+
+.button-academy:active {
+  fill: #bdbbbc;
+}
+
+
+/* 2 страница */
+.hotel-criteria {
+  height: 298px;
+  background-image: url("..img/filterbackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.more {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+.more:hover {
+  background-color: #669ec0;
+}
+
+.more:active {
+  color: #94b9d2;
+  background-color: #5496bd;
+}
