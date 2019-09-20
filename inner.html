@@ -12,10 +12,10 @@
   <nav class="navigation">
     <a class="header-logo" href="index.html"><img src="img/logo-sedona.svg" alt="Седона" width="140" height="72"></a>
     <ul class="site-navigation">
-      <li><a href="info.html">Информация</a></li>
-      <li><a href="content.html">Фото и видео</a></li>
-      <li><a href="map.html">Карта штата</a></li>
-      <li><a href="inner.html">Гостиницы</a></li>
+      <li><a class="not-current" href="info.html">Информация</a></li>
+      <li><a class="not-current" href="content.html">Фото и видео</a></li>
+      <li><a class="not-current" href="map.html">Карта штата</a></li>
+      <li><a class="current" href="#">Гостиницы</a></li>
     </ul>
   </nav>
 </header>
@@ -45,16 +45,26 @@
       </fieldset>
       <fieldset>
         <legend>стоимость в сутки (р):</legend>
-        <label id="min">от</label>
-        <input type="text" name="min" for="min" value="0" placeholder="минимум">
-        <label id="max">до</label>
-        <input type="text" name="max" for="max" value="3000" placeholder="максимум">
-        <label id="range-price"><span class="visually-hidden">диапозон цен</span></label>
-        <input type="range" min="0" max="3000" value="1" for="range-price" name="range-price">
+        <label for="min">от</label>
+        <input type="text" name="min" id="min" value="0" placeholder="минимум">
+        <label for="max">до</label>
+        <input type="text" name="max" id="max" value="3000" placeholder="максимум">
+        <label for="range-price"><span class="visually-hidden">диапозон цен</span></label>
+        <input type="range" min="0" max="3000" value="1" id="range-price" name="range-price">
         <button type="submit">показать</button>
       </fieldset>
     </form>
     </div>
+  </section>
+  <section>
+    <h2 class="visually-hidden">сортировка результатов</h2>
+    <p class="found">найдено: 3</p>
+    <span class="sorting">сортировка:</span>
+    <a href="#"><span class="current-choise">по цене</span></a>
+    <a href="#"><span class="not-current-choise">по типу</span></a>
+    <a href="#"><span class="not-current-choise">по рейтингу</span></a>
+    <svg class="up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+    <svg class="down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
   </section>
   <section>
     <h2 class="visually-hidden">Список жилья</h2>
@@ -67,8 +77,8 @@
         <h3>AMARA RESORT & SPA</h3>
         <p>Гостиница</p>
         <p>от 4000р</p>
-      <a class="more" href="item-1.html">Подробнее</a>
-      <button type="button">Забронировать</button>
+        <a class="more" href="item-1.html"><span class="more-info">Подробнее</span></a>
+      <button class="book-button" type="button"><span class="book">Забронировать</span></button>
       </div>
       <div>
         <span><img src="img/star.svg" width="18" height="17" alt="звезда"></span>
@@ -86,8 +96,8 @@
         <h3>DESERT QUAL INN</h3>
         <p>Мотель</p>
         <p>от 3000р</p>
-      <a class="more" href="item-1.html">Подробнее</a>
-      <button type="button">Забронировать</button>
+      <a class="more" href="item-1.html"><span class="more-info">Подробнее</span></a>
+      <button class="book-button" type="button"><span class="book">Забронировать</span></button>
       </div>
       <div>
         <span><img src="img/star.svg" width="18" height="17" alt="звезда"></span>
@@ -104,8 +114,8 @@
         <h3>VILLAS AT POCO DIABLO</h3>
         <p>Апартаменты</p>
         <p>от 2000р</p>
-      <a class="more" href="item-1.html">Подробнее</a>
-      <button type="button">Забронировать</button>
+      <a class="more" href="item-1.html"><span class="more-info">Подробнее</span></a>
+        <button class="book-button" type="button"><span class="book">Забронировать</span></button>
       </div>
       <div>
         <span><img src="img/star.svg" width="18" height="17" alt="звезда"></span>
@@ -118,7 +128,7 @@
 </main>
 <footer>
   <div class="sedona-hashtag">
-    <p>#VISITSEDONA</p>
+    <p class="hashtag">#VISITSEDONA</p>
   </div>
   <div class="button-social">
     <a class="social" href="#"><span class="visually-hidden">Твиттер</span> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>
