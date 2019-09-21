@@ -31,21 +31,20 @@ a {
   list-style: none;
 }
 
-.info,
 .current {
   font-weight: bold;
   color: #766357;
 }
 
-.nav-item:not(.current):not(.info) {
+.nav-item:not(.current) {
   font-weight: bold;
   color: #000000;
 }
-.nav-item:not(.current):not(.info):hover {
+.nav-item:not(.current):hover {
   color: #81b3d2;
 }
 
-.nav-item:not(.current):not(.info):active {
+.nav-item:not(.current):active {
   opacity: 0.3;
   color: #000000;
 }
