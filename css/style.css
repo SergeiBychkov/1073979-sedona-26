@@ -152,6 +152,16 @@ text-align: center;
   line-height: 26px;
 }
 
+.date-field:hover,
+.number-of-guest:hover {
+  background-color: #ebebeb;
+}
+
+.date-field:focus,
+.number-of-guest:focus {
+  background-color: #ffffff;
+}
+
 .calendar {
   fill: #cacaca;
 }
