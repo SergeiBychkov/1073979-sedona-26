@@ -12,10 +12,10 @@
     <nav class="navigation">
       <a class="header-logo" href="index.html"><img src="img/logo-sedona.svg" alt="Седона" width="140" height="72"></a>
       <ul class="site-navigation">
-        <li><a class="current" href="#">Информация</a></li>
-        <li><a class="not-current" href="content.html">Фото и видео</a></li>
-        <li><a class="not-current" href="map.html">Карта штата</a></li>
-        <li><a class="not-current" href="inner.html">Гостиницы</a></li>
+        <li><a class="nav-item-info" href="#">Информация</a></li>
+        <li><a class="nav-item" href="content.html">Фото и видео</a></li>
+        <li><a class="nav-item" href="map.html">Карта штата</a></li>
+        <li><a class="nav-item" href="inner.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -36,6 +36,7 @@
       <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
       </div>
       <div class="gallery1">
+        <img src="img/city.jpg" alt="фото городка" width="800" height="256" >
       </div>
       <ul class="features-list1">
         <li>
@@ -60,6 +61,7 @@
       <p>Да, по нему можно пройти! если конечно вы осмелитесь</p>
       </div>
       <div class="gallery2">
+        <img src="img/canyon.jpg" alt="фото городка" width="800" height="256" >
       </div>
       <ul class="features-list2">
         <li>
@@ -91,7 +93,7 @@
     </section>
       <section>
         <h2 class="visually-hidden">поиск гостиницы в седоне</h2>
-      <a href="#" class="button-active"><span class="active">поиск гостиницы в седоне</span></a>
+      <a href="#" class="button-active">поиск гостиницы в седоне</a>
       <form action="https://echo.htmlacademy.ru" method="get">
         <div>
         <label class="label-headline" for="arrival-date">дата заезда:</label>
@@ -109,17 +111,17 @@
         </div>
         <div>
           <label class="label-headline" for="adults">взрослые:</label>
-          <button type="button" aria-label="убрать одного взрослого">-</button>
+          <button class="button-minus" type="button" aria-label="убрать одного взрослого">-</button>
           <input class="number-of-guest" type="number" id="adults" name="adults" value="2">
-          <button type="button" aria-label="добавить одного взрослого">+</button>
+          <button class="button-plus" type="button" aria-label="добавить одного взрослого">+</button>
         </div>
         <div>
           <label class="label-headline" for="children">дети:</label>
-          <button type="button" aria-label="убрать одного ребенка">-</button>
+          <button class="button-minus" type="button" aria-label="убрать одного ребенка">-</button>
           <input class="number-of-guest" type="number" id="children" name="childer" value="0">
-          <button type="button" aria-label="добавить одного ребенка">+</button>
+          <button class="button-plus" type="button" aria-label="добавить одного ребенка">+</button>
         </div>
-        <button class="button-search" type="submit"><span class="active">найти</span></button>
+        <button class="button-search" type="submit">найти</button>
       </form>
     </section>
   </main>

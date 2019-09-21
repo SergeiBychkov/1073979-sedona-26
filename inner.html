@@ -12,10 +12,10 @@
   <nav class="navigation">
     <a class="header-logo" href="index.html"><img src="img/logo-sedona.svg" alt="Седона" width="140" height="72"></a>
     <ul class="site-navigation">
-      <li><a class="not-current" href="info.html">Информация</a></li>
-      <li><a class="not-current" href="content.html">Фото и видео</a></li>
-      <li><a class="not-current" href="map.html">Карта штата</a></li>
-      <li><a class="current" href="#">Гостиницы</a></li>
+      <li><a class="nav-item" href="info.html">Информация</a></li>
+      <li><a class="nav-item" href="content.html">Фото и видео</a></li>
+      <li><a class="nav-item" href="map.html">Карта штата</a></li>
+      <li><a class="current-nav" href="#">Гостиницы</a></li>
     </ul>
   </nav>
 </header>
@@ -26,32 +26,32 @@
     <div class="hotel-criteria">
     <form  action="https://echo.htmlacademy.ru" method="get">
       <fieldset>
-        <legend>инфраструктура:</legend>
+        <legend class="criteria-headline">инфраструктура:</legend>
         <input type="checkbox" id="swimming-pool" name="swimming-pool" checked>
-        <label for="swimming-pool">бассейн</label>
+        <label class="criteria-parameters" for="swimming-pool">бассейн</label>
         <input type="checkbox" id="parking" name="parking">
-        <label for="parking">парковка</label>
+        <label class="criteria-parameters" for="parking">парковка</label>
         <input type="checkbox" id="wi-fi" name="wi-fi">
-        <label for="wi-fi">wi-fi</label>
+        <label class="criteria-parameters" for="wi-fi">wi-fi</label>
       </fieldset>
       <fieldset>
-        <legend>тип жилья:</legend>
+        <legend class="criteria-headline">тип жилья:</legend>
         <input type="checkbox" id="hotel" name="hotel" checked>
-        <label for="hotel">гостиница</label>
+        <label class="criteria-parameters" for="hotel">гостиница</label>
         <input type="checkbox" id="motel" name="motel" checked>
-        <label for="motel">мотель</label>
+        <label class="criteria-parameters" for="motel">мотель</label>
         <input type="checkbox" id="apartments" name="apartments" checked>
-        <label for="apartments">апартаменты</label>
+        <label class="criteria-parameters" for="apartments">апартаменты</label>
       </fieldset>
       <fieldset>
-        <legend>стоимость в сутки (р):</legend>
-        <label for="min">от</label>
-        <input type="text" name="min" id="min" value="0" placeholder="минимум">
-        <label for="max">до</label>
-        <input type="text" name="max" id="max" value="3000" placeholder="максимум">
+        <legend class="criteria-headline">стоимость в сутки (р):</legend>
+        <label class="criteria-parameters" for="min">от</label>
+        <input class="range-block" type="text" name="min" id="min" value="0" placeholder="минимум">
+        <label class="criteria-parameters" for="max">до</label>
+        <input class="range-block" type="text" name="max" id="max" value="3000" placeholder="максимум">
         <label for="range-price"><span class="visually-hidden">диапозон цен</span></label>
         <input type="range" min="0" max="3000" value="1" id="range-price" name="range-price">
-        <button type="submit">показать</button>
+        <button class="show-result" type="submit">показать</button>
       </fieldset>
     </form>
     </div>
@@ -60,9 +60,9 @@
     <h2 class="visually-hidden">сортировка результатов</h2>
     <p class="found">найдено: 3</p>
     <span class="sorting">сортировка:</span>
-    <a href="#"><span class="current-choise">по цене</span></a>
-    <a href="#"><span class="not-current-choise">по типу</span></a>
-    <a href="#"><span class="not-current-choise">по рейтингу</span></a>
+    <a class="current-choise" href="#">по цене</a>
+    <a class="not-current-choise" href="#">по типу</a>
+    <a class="not-current-choise" href="#">по рейтингу</a>
     <svg class="up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
     <svg class="down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
   </section>
@@ -77,8 +77,8 @@
         <h3>AMARA RESORT & SPA</h3>
         <p>Гостиница</p>
         <p>от 4000р</p>
-        <a class="more" href="item-1.html"><span class="more-info">Подробнее</span></a>
-      <button class="book-button" type="button"><span class="book">Забронировать</span></button>
+        <a class="more" href="item-1.html">Подробнее</a>
+      <button class="book-button" type="button">Забронировать</button>
       </div>
       <div>
         <span><img src="img/star.svg" width="18" height="17" alt="звезда"></span>
@@ -96,8 +96,8 @@
         <h3>DESERT QUAL INN</h3>
         <p>Мотель</p>
         <p>от 3000р</p>
-      <a class="more" href="item-1.html"><span class="more-info">Подробнее</span></a>
-      <button class="book-button" type="button"><span class="book">Забронировать</span></button>
+      <a class="more" href="item-1.html">Подробнее</a>
+      <button class="book-button" type="button">Забронировать</button>
       </div>
       <div>
         <span><img src="img/star.svg" width="18" height="17" alt="звезда"></span>
@@ -114,8 +114,8 @@
         <h3>VILLAS AT POCO DIABLO</h3>
         <p>Апартаменты</p>
         <p>от 2000р</p>
-      <a class="more" href="item-1.html"><span class="more-info">Подробнее</span></a>
-        <button class="book-button" type="button"><span class="book">Забронировать</span></button>
+      <a class="more" href="item-1.html">Подробнее</a>
+        <button class="book-button" type="button">Забронировать</button>
       </div>
       <div>
         <span><img src="img/star.svg" width="18" height="17" alt="звезда"></span>

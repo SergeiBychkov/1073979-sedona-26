@@ -31,20 +31,21 @@ a {
   list-style: none;
 }
 
-.current {
+.current-nav,
+.nav-item-info{
   color: #766357;
   font-weight: bold;
 }
 
-.not-current {
+.nav-item {
   color: #000000;
   font-weight: bold;
 }
-.not-current:hover {
+.nav-item:hover {
   color: #81b3d2;
 }
 
-.not-current:active {
+.nav-item:active {
   color: #000000;
   opacity: 0.3;
 }
@@ -81,18 +82,6 @@ a {
   width: 33.4%;
   background-color: #81b3d2;
   color: #ffffff;
-}
-
-.gallery1 {
-  width: 66.6%;
-  background-image: url("../img/city.jpg");
-  background-repeat: no-repeat;
-}
-
-.gallery2 {
-  width: 66.6%;
-  background-image: url("../img/canyon.jpg");
-  background-repeat: no-repeat;
 }
 
 .features{
@@ -146,8 +135,8 @@ text-align: center;
 }
 
 .button-active:active {
-  color: #928a85;
   background-color: #503e33;
+  color: rgba(255,255,255,0.3);
 }
 
 .label-headline {
@@ -173,6 +162,21 @@ text-align: center;
   fill: #81b3d2;
 }
 
+.button-minus,
+.button-plus {
+  color: #a9a9a9;
+}
+
+.button-minus:hover,
+.button-plus:hover {
+  color: #000000;
+}
+
+.button-minus:active,
+.button-plus:active {
+  color: #81b3d2;
+}
+
 .button-search {
   background-color: #81b3d2;
   color: #ffffff;
@@ -184,11 +188,8 @@ text-align: center;
 }
 
 .button-search:active {
+  color: rgba(255,255,255, 0.3);
   background-color: #5496bd;
-}
-
-.active:active {
-  opacity: 0.3;
 }
 
 /* футер */
@@ -220,6 +221,43 @@ text-align: center;
 
 
 /* 2 страница */
+.hotel-criteria {
+  background-image: url("../img/filterbackground.jpg")
+}
+
+.criteria-headline {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.criteria-parameters {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.range-block {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.show-result {
+  font-size: 14px;
+  line-height: 21px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: #ffffff;
+}
+
+.show-result:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
 .found {
   font-size: 21px;
   font-weight: bold;
@@ -253,30 +291,22 @@ text-align: center;
 }
 
 .more:active {
+  color: rgba(255,255,255, 0.3);
   background-color: #5496bd;
 }
-.more-info:active {
-  opacity: 0.3;
-}
-
 .book-button {
+  color: #ffffff;
   background-color: #766357;
 }
 
 .book-button:hover {
+  color: #ffffff;
   background-color: #604e43;
 }
 
 .book-button:active {
+  color: rgba(255,255,255,0.3);
   background-color: #503e33;
-}
-
-.book {
-  color: #ffffff;
-}
-
-.book:active {
-  opacity: 0.3;
 }
 
 .current-choise {
