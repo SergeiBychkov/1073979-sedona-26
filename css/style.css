@@ -7,8 +7,8 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   line-height: 24px;
-  color: #000000;
   background: #ffffff;
+  color: #000000;
 }
 
 a {
@@ -31,23 +31,23 @@ a {
   list-style: none;
 }
 
-.current-nav,
-.nav-item-info{
-  color: #766357;
+.info,
+.current {
   font-weight: bold;
+  color: #766357;
 }
 
-.nav-item {
-  color: #000000;
+.nav-item:not(.current):not(.info) {
   font-weight: bold;
+  color: #000000;
 }
-.nav-item:hover {
+.nav-item:not(.current):not(.info):hover {
   color: #81b3d2;
 }
 
-.nav-item:active {
-  color: #000000;
+.nav-item:not(.current):not(.info):active {
   opacity: 0.3;
+  color: #000000;
 }
 
 /* мэйн */
@@ -103,8 +103,8 @@ text-align: center;
 }
 
 .small-text {
-  color: #333333;
   line-height: 21px;
+  color: #333333;
 }
 
 .appointment {
@@ -146,6 +146,7 @@ text-align: center;
 
 .date-field,
 .number-of-guest {
+  text-transform: uppercase;
   background-color: #f2f2f2;
   font-weight: bold;
   line-height: 26px;
@@ -178,6 +179,7 @@ text-align: center;
 }
 
 .button-search {
+  text-transform: uppercase;
   background-color: #81b3d2;
   color: #ffffff;
 }
@@ -268,14 +270,19 @@ text-align: center;
   font-weight: 500;
 }
 
-.current-choise {
+.active-choise {
   font-size: 12px;
   line-height: 18px;
+  color: #81b3d2;
 }
 
-.not-current-choise {
+.choise:not(.active-choise) {
   font-size: 12px;
   line-height: 18px;
+  opacity: 0.3;
+  border-bottom: 2px dotted;
+  border-color: #81b3d2;
+  color: #000000;
 }
 
 .down {
@@ -283,39 +290,29 @@ text-align: center;
 }
 
 .more{
-  color: #ffffff;
   background-color: #81b3d2;
+  color: #ffffff;
 }
 .more:hover {
   background-color: #669ec0;
 }
 
 .more:active {
-  color: rgba(255,255,255, 0.3);
   background-color: #5496bd;
+  color: rgba(255,255,255, 0.3);
 }
 .book-button {
-  color: #ffffff;
+  text-transform: uppercase;
   background-color: #766357;
+  color: #ffffff;
 }
 
 .book-button:hover {
-  color: #ffffff;
   background-color: #604e43;
+  color: #ffffff;
 }
 
 .book-button:active {
-  color: rgba(255,255,255,0.3);
   background-color: #503e33;
-}
-
-.current-choise {
-  color: #81b3d2;
-}
-
-.not-current-choise {
-  color: #000000;
-  opacity: 0.3;
-  border-bottom: 2px dotted;
-  border-color: #81b3d2;
+  color: rgba(255,255,255,0.3);
 }
