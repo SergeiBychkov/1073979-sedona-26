@@ -7,7 +7,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   line-height: 24px;
-  background: #ffffff;
+  background-color: #ffffff;
   color: #000000;
 }
 
@@ -51,6 +51,7 @@ a {
 
 /* мэйн */
 .sedona-welcome {
+  width: 1200px;
   height: 780px;
   background-image: url("../img/intro.jpg");
   background-position: center;
@@ -174,6 +175,7 @@ text-align: center;
 
 .button-minus,
 .button-plus {
+  font-weight: bold;
   color: #a9a9a9;
 }
 
@@ -324,4 +326,116 @@ text-align: center;
 .book-button:active {
   background-color: #503e33;
   color: rgba(255,255,255,0.3);
+}
+
+
+/* сетки */
+html,
+body {
+  min-width: 1200px;
+  min-height: 2760px;
+}
+
+.header {
+  min-width: 1200px;
+  min-height: 56px;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  height: 56px;
+}
+
+.site-navigation {
+  display: flex;
+  width: 1200px;
+  height: 56px;
+  justify-content: space-between;
+
+}
+
+.left-order {
+  margin-left: 72px;
+}
+
+.right-order {
+  margin-right: 72px;
+}
+
+.header-logo {
+  margin: 0 130px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 216px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  height: 1098px;
+}
+
+.main-features1 {
+  width: 400px;
+  min-height: 256px;
+}
+
+.features-list1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-features2 {
+  width: 400px;
+  min-height: 256px;
+}
+
+.features-list2 {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  min-height: 256px;
+}
+
+.hotel-helper {
+  display: flex;
+  flex-direction: column;
+}
+
+.appointment {
+  width: 1200px;
+  min-height: 290px;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  width: 1200px;
+  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sedona-hashtag {
+  margin-left: 130px;
+}
+
+.middle {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.websiteA {
+  margin-right: 100px;
+}
+
+.pp {
+  display: flex;
+  flex-direction: column;
 }
