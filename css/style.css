@@ -384,20 +384,20 @@ text-align: center;
 }
 
 .choise:active {
-  border: none;
+  border-color: transparent;
   color: #000000;
 }
 
-.sort-button {
+.sort-button:not(.active-sort-button) {
   fill: #cacaca;
 }
 
-.sort-button:hover{
+.sort-button:not(.active-sort-button):hover{
   fill: #231f20;
   transition: 0.3s;
 }
 
-.sort-button:active {
+.sort-button:not(.active-sort-button):active {
   fill: #81b3d2;
 }
 
