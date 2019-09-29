@@ -42,6 +42,7 @@ a {
 }
 .nav-item:not(.current):hover {
   color: #81b3d2;
+  transition: 0.3s;
 }
 
 .nav-item:not(.current):active {
@@ -115,6 +116,7 @@ text-align: center;
 
 .button-active:hover {
   background-color: #604e43;
+  transition: 0.3s;
 }
 
 .button-active:active {
@@ -156,6 +158,7 @@ text-align: center;
 .date-field:hover,
 .number-of-guest:hover {
   background-color: #ebebeb;
+  transition: 0.3s;
 }
 
 .date-field:focus,
@@ -168,6 +171,7 @@ text-align: center;
 }
 .calendar:hover {
   fill: #000000;
+  transition: 0.3s;
 }
 
 .calendar:active {
@@ -186,6 +190,7 @@ text-align: center;
 .button-minus:hover,
 .button-plus:hover {
   color: #000000;
+  transition: 0.3s;
 }
 
 .button-minus:active,
@@ -214,11 +219,13 @@ text-align: center;
   line-height: 26px;
   font-weight: bold;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .button-search:hover {
   background-color: #669ec0;
   color: #ffffff;
+  transition: 0.3s;
 }
 
 .button-search:active {
@@ -250,13 +257,32 @@ text-align: center;
 
 .social:hover {
   background-color: #669ec0;
+  transition: 0.3s;
 }
 .social:active {
   background-color: #5496bd;
 }
 
+.social:active svg {
+  opacity: 0.3;
+}
+
+.websiteA {
+  display: flex;
+  align-items: center;
+}
+
+.webBy {
+  font-size: 14px;
+  line-height: 26px;
+  display: block;
+  margin-right: 5px;
+}
+
+
 .button-academy:hover {
   fill: #98c1da;
+  transition: 0.3s;
 }
 
 .button-academy:active {
@@ -278,12 +304,46 @@ text-align: center;
 }
 
 .criteria-parameters {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   font-size: 14px;
   line-height: 21px;
-  color: #ffffff;
   margin-bottom: 23px;
+  cursor: pointer;
+  color: #ffffff;
 }
 
+.criteria-parameters::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 23px;
+  height: 23px;
+}
+
+.checkbox-control:checked + .criteria-parameters::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 26px;
+  height: 23px;
+}
+
+.checkbox-control:disabled + .criteria-parameters::before {
+  content: "";
+  opacity: 0.3;
+}
 
 .criteria-headline {
   margin-bottom: 23px;
@@ -314,9 +374,18 @@ text-align: center;
 .choise:not(.active-choise) {
   font-size: 12px;
   line-height: 18px;
-  opacity: 0.3;
-  border-bottom: 2px dotted;
-  border-color: #81b3d2;
+  border-bottom: 2px dotted rgba(129, 179, 210, 1);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.choise:hover {
+  opacity: 1;
+  color: #81b3d2;
+  transition: 0.3s;
+}
+
+.choise:active {
+  opacity: 1;
   color: #000000;
 }
 
@@ -328,7 +397,7 @@ text-align: center;
 .up:hover,
 .down:hover {
   fill: #231f20;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .up:active,
@@ -341,6 +410,7 @@ text-align: center;
 }
 
 .more{
+  font-weight: bold;
   background-color: #81b3d2;
   color: #ffffff;
   padding-top: 4px;
@@ -352,6 +422,7 @@ text-align: center;
 }
 .more:hover {
   background-color: #669ec0;
+  transition: 0.3s;
 }
 
 .more:active {
@@ -360,6 +431,7 @@ text-align: center;
 }
 .book-button {
   text-transform: uppercase;
+  font-weight: bold;
   background-color: #766357;
   color: #ffffff;
   padding-top: 5px;
@@ -368,11 +440,13 @@ text-align: center;
   padding-right: 17px;
   border: none;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .book-button:hover {
   background-color: #604e43;
   color: #ffffff;
+  transition: 0.3s;
 }
 
 .book-button:active {
@@ -452,8 +526,8 @@ padding: 76px 1px 29px 1px;
 }
 
 .description {
-  padding-top: 64px;
-  padding-bottom: 58px ;
+  padding-top: 34px;
+  padding-bottom: 34px ;
   width: 1200px;
 }
 
@@ -509,7 +583,7 @@ padding: 76px 1px 29px 1px;
   width: 400px;
   box-sizing: border-box;
   padding-top: 60px;
-  padding-bottom: 88px;
+  padding-bottom: 68px;
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -531,7 +605,7 @@ padding: 76px 1px 29px 1px;
 }
 
 .bottom-introduction {
-  margin-bottom: 36px;
+  margin-bottom: 27px;
 }
 
 .text-introduction {
@@ -579,15 +653,15 @@ padding: 76px 1px 29px 1px;
 
 .map {
   min-height: 595px;
-  background-image: url("../img/map.png")
+  background-image: url("../img/map.png");
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 36px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   padding-left: 132px;
   padding-right: 101px;
 }
@@ -602,7 +676,7 @@ padding: 76px 1px 29px 1px;
 .hotel-criteria {
   display: flex;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 2px;
   padding-left: 72px;
   padding-right: 72px;
 }
@@ -692,6 +766,8 @@ padding: 76px 1px 29px 1px;
 }
 
 .range-toggle {
+  display: inline-block;
+  padding: 2px;
   position: absolute;
   top: -9px;
   width: 4px;
@@ -705,6 +781,7 @@ padding: 76px 1px 29px 1px;
 
 .range-toggle:hover {
   background: #1c4f80;
+  transition: 0.3s;
 }
 
 .range-toggle-min {
@@ -732,13 +809,14 @@ padding: 76px 1px 29px 1px;
 .btn-transparent:hover {
   color: #000000;
   background: #ffffff;
+  transition: 0.3s;
 }
 
 .results {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 72px;
   padding-right: 72px;
 }
@@ -760,6 +838,7 @@ padding: 76px 1px 29px 1px;
 .hotel-list {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .hotel-list li {
@@ -790,6 +869,8 @@ padding: 76px 1px 29px 1px;
 }
 
 .hotel-name {
+  font-size: 21px;
+  line-height: 26px;
   margin-top: 0;
   margin-bottom: 5px;
 }
@@ -797,3 +878,17 @@ padding: 76px 1px 29px 1px;
 .hotel-type {
   margin-right: 40px;
 }
+
+.hotel-name-link {
+  color: #000000;
+}
+
+.hotel-name-link:hover {
+  color: #81b3d2;
+  transition: 0.3s;
+}
+
+.hotel-name-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
