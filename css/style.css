@@ -379,33 +379,29 @@ text-align: center;
 }
 
 .choise:hover {
-  opacity: 1;
   color: #81b3d2;
   transition: 0.3s;
 }
 
 .choise:active {
-  opacity: 1;
+  border: none;
   color: #000000;
 }
 
-.up,
-.down {
+.sort-button {
   fill: #cacaca;
 }
 
-.up:hover,
-.down:hover {
+.sort-button:hover{
   fill: #231f20;
   transition: 0.3s;
 }
 
-.up:active,
-.down:active {
+.sort-button:active {
   fill: #81b3d2;
 }
 
-.down {
+.active-sort-button {
   fill: #81b3d2;
 }
 
@@ -782,6 +778,7 @@ padding: 76px 1px 29px 1px;
 .range-toggle:hover {
   background: #1c4f80;
   transition: 0.3s;
+  transform: scale(1.1);
 }
 
 .range-toggle-min {
