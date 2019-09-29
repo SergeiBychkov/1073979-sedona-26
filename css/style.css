@@ -164,7 +164,14 @@ text-align: center;
 .date-field:focus,
 .number-of-guest:focus {
   background-color: #ffffff;
+  box-shadow:inset 0 0 0 2px #e5e5e5;
 }
+
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
 
 .calendar {
   fill: #cacaca;
@@ -889,3 +896,7 @@ padding: 76px 1px 29px 1px;
   color: rgba(0, 0, 0, 0.3);
 }
 
+iframe {
+  border: none;
+  frameborder: none;
+}
