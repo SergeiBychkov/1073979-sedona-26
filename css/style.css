@@ -320,8 +320,20 @@ text-align: center;
   color: #000000;
 }
 
-.up {
+.up,
+.down {
   fill: #cacaca;
+}
+
+.up:hover,
+.down:hover {
+  fill: #231f20;
+  transition: 1s;
+}
+
+.up:active,
+.down:active {
+  fill: #81b3d2;
 }
 
 .down {
@@ -431,7 +443,7 @@ text-align: center;
   bottom: -2px;
   background-image: url("../img/intro-mask.svg");
   background-repeat: no-repeat;
-  width: 1200px;
+  width: 100%;
   height: 59px;
 }
 
