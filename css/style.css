@@ -167,12 +167,6 @@ text-align: center;
   box-shadow:inset 0 0 0 2px #e5e5e5;
 }
 
-:focus {
-  outline: 0;
-  outline-offset: 0;
-}
-
-
 .calendar {
   fill: #cacaca;
 }
@@ -300,7 +294,7 @@ text-align: center;
 /* 2 страница */
 .hotel-criteria {
   background-image: url("../img/filterbackground.jpg");
-  background-position: center -210px;
+  background-position: center -185px;
 }
 
 .criteria-headline {
@@ -350,6 +344,10 @@ text-align: center;
 .checkbox-control:disabled + .criteria-parameters::before {
   content: "";
   opacity: 0.3;
+}
+
+.checkbox-control:focus + .criteria-parameters::before {
+  outline: 2px solid #81b3d2;
 }
 
 .criteria-headline {
