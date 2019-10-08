@@ -49,9 +49,10 @@ a {
   font-weight: bold;
   color: #000000;
 }
+
 .nav-item:not(.current):hover {
-  color: #81b3d2;
   transition: 0.3s;
+  color: #81b3d2;
 }
 
 .nav-item:not(.current):active {
@@ -59,7 +60,8 @@ a {
   color: #000000;
 }
 
-/* мэйн */
+/* */
+
 .preview {
   font-size: 21px;
   font-weight: bold;
@@ -76,10 +78,9 @@ a {
   color: #333333;
 }
 
-.features{
-text-align: center;
+.features {
+  text-align: center;
 }
-
 
 .small-headlines {
   font-size: 21px;
@@ -91,7 +92,8 @@ text-align: center;
 }
 
 .features-number-li {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  padding-top: 5px;
 }
 
 .small-text {
@@ -114,7 +116,7 @@ text-align: center;
 }
 
 .text-introduction {
-  margin-bottom: 45px;
+  margin-bottom: 46px;
   color: #333333;
 }
 
@@ -134,13 +136,13 @@ text-align: center;
 }
 
 .button-active:hover {
-  background-color: #604e43;
   transition: 0.3s;
+  background-color: #604e43;
 }
 
 .button-active:active {
   background-color: #503e33;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .label-headline {
@@ -151,19 +153,19 @@ text-align: center;
 .date-field,
 .number-of-guest {
   text-transform: uppercase;
-  background-color: #f2f2f2;
   font-weight: bold;
   line-height: 26px;
   border: none;
   box-sizing: border-box;
+  background-color: #f2f2f2;
 }
 
 .date-field {
+  padding-top: 6px;
+  padding-bottom: 6px;
   padding-left: 15px;
   padding-right: 45px;
   width: 346px;
-  padding-top: 6px;
-  padding-bottom: 6px;
 }
 
 .number-of-guest {
@@ -177,22 +179,23 @@ text-align: center;
 
 .date-field:hover,
 .number-of-guest:hover {
-  background-color: #ebebeb;
   transition: 0.3s;
+  background-color: #ebebeb;
 }
 
 .date-field:focus,
 .number-of-guest:focus {
   background-color: #ffffff;
-  box-shadow:inset 0 0 0 2px #e5e5e5;
+  box-shadow: inset 0 0 0 2px #e5e5e5;
 }
 
 .calendar {
   fill: #cacaca;
 }
+
 .calendar:hover {
-  fill: #000000;
   transition: 0.3s;
+  fill: #000000;
 }
 
 .calendar:active {
@@ -202,16 +205,17 @@ text-align: center;
 .button-minus,
 .button-plus {
   position: absolute;
-  font-weight: bold;
-  color: #a9a9a9;
   background: transparent;
   border: none;
+  font-weight: bold;
+  font-size: 25px;
+  color: #a9a9a9;
 }
 
 .button-minus:hover,
 .button-plus:hover {
-  color: #000000;
   transition: 0.3s;
+  color: #000000;
 }
 
 .button-minus:active,
@@ -220,38 +224,38 @@ text-align: center;
 }
 
 .button-plus {
-  top: 10px;
-  left: 90px;
+  top: 4px;
+  left: 85px;
 }
 
 .button-minus {
-  top: 10px;
+  top: 4px;
   left: 5px;
 }
 
 .button-search {
   width: 458px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   text-transform: uppercase;
-  background-color: #81b3d2;
   border: none;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  color: #ffffff;
   cursor: pointer;
+  background-color: #81b3d2;
+  color: #ffffff;
 }
 
 .button-search:hover {
+  transition: 0.3s;
   background-color: #669ec0;
   color: #ffffff;
-  transition: 0.3s;
 }
 
 .button-search:active {
-  color: rgba(255,255,255, 0.3);
   background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* футер */
@@ -267,7 +271,7 @@ text-align: center;
   flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 45px;
+  margin-left: 55px;
   margin-right: 25px;
   padding-top: 5px;
 }
@@ -276,22 +280,22 @@ text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #81b3d2;
   width: 46px;
   height: 48px;
-  margin-right: 6px;
   margin-bottom: 3px;
+  margin-right: 6px;
+  background-color: #81b3d2;
 }
 
 .social:nth-child(3n) {
   margin-right: 0;
 }
 
-
 .social:hover {
-  background-color: #669ec0;
   transition: 0.3s;
+  background-color: #669ec0;
 }
+
 .social:active {
   background-color: #5496bd;
 }
@@ -306,45 +310,44 @@ text-align: center;
 }
 
 .webBy {
+  display: block;
   font-size: 14px;
   line-height: 26px;
-  display: block;
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
 .academy-label {
-  margin-top: 6px;
+  margin-top: 7px;
 }
 
 .button-academy:hover {
-  fill: #98c1da;
   transition: 0.3s;
+  fill: #98c1da;
 }
 
 .button-academy:active {
   fill: #bdbbbc;
 }
 
-
 /* 2 страница */
 .criteria-headline {
   font-size: 16px;
   font-weight: bold;
   line-height: 21px;
-  padding-top: 2px;
   margin-bottom: 13px;
+  padding-top: 2px;
   color: #ffffff;
 }
 
 .criteria-parameters {
   display: block;
   position: relative;
-  padding-left: 40px;
+  margin-bottom: 13px;
   padding-top: 6px;
   padding-bottom: 6px;
+  padding-left: 40px;
   font-size: 14px;
   line-height: 21px;
-  margin-bottom: 13px;
   cursor: pointer;
   color: #ffffff;
 }
@@ -414,8 +417,8 @@ text-align: center;
 }
 
 .choise:hover {
-  color: #81b3d2;
   transition: 0.3s;
+  color: #81b3d2;
 }
 
 .choise:active {
@@ -427,9 +430,9 @@ text-align: center;
   fill: #cacaca;
 }
 
-.sort-button:not(.active-sort-button):hover{
-  fill: #231f20;
+.sort-button:not(.active-sort-button):hover {
   transition: 0.3s;
+  fill: #231f20;
 }
 
 .sort-button:not(.active-sort-button):active {
@@ -441,57 +444,58 @@ text-align: center;
   fill: #81b3d2;
 }
 
-.more{
+.more {
   font-weight: bold;
+  margin-right: 3px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  padding-left: 17px;
+  padding-right: 15px;
+  border: none;
   background-color: #81b3d2;
   color: #ffffff;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 17px;
-  padding-right: 17px;
-  border: none;
-  margin-right: 3px;
 }
+
 .more:hover {
-  background-color: #669ec0;
   transition: 0.3s;
+  background-color: #669ec0;
 }
 
 .more:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
-  color: rgba(255,255,255, 0.3);
 }
+
 .book-button {
   text-transform: uppercase;
   font-weight: bold;
-  background-color: #766357;
-  color: #ffffff;
+  margin-top: 10px;
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
   padding-left: 17px;
   padding-right: 17px;
   border: none;
-  margin-top: 10px;
   cursor: pointer;
+  background-color: #766357;
+  color: #ffffff;
 }
 
 .book-button:hover {
+  transition: 0.3s;
   background-color: #604e43;
   color: #ffffff;
-  transition: 0.3s;
 }
 
 .book-button:active {
   background-color: #503e33;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
-
 
 /* сетки */
 .container {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3 );
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
 }
 
 .navigation {
@@ -522,7 +526,7 @@ text-align: center;
 }
 
 .site-navigation li:nth-child(4n-1),
-.site-navigation li:nth-child(4n){
+.site-navigation li:nth-child(4n) {
   text-align: right;
 }
 
@@ -548,17 +552,17 @@ text-align: center;
 }
 
 .welcome {
-padding: 76px 1px 29px 1px;
+  padding: 76px 1px 29px 1px;
 }
 
 .description {
   padding-top: 34px;
-  padding-bottom: 37px ;
+  padding-bottom: 37px;
   width: 1200px;
 }
 
 .text-content {
-  margin:0 auto;
+  margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -572,8 +576,8 @@ padding: 76px 1px 29px 1px;
 .gallery {
   overflow: hidden;
   line-height: 0;
-  background-color: #81b3d2;
   min-width: 800px;
+  background-color: #81b3d2;
 }
 
 .gallery img {
@@ -584,20 +588,19 @@ padding: 76px 1px 29px 1px;
 
 .main-features {
   width: 400px;
-  background-color: #81b3d2;
-  color: #ffffff;
   padding-top: 30px;
+  padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 10px;
   box-sizing: border-box;
+  background-color: #81b3d2;
+  color: #ffffff;
 }
 
 .main-features .blue-box {
   margin-top: 17px;
   margin-bottom: 20px;
 }
-
 
 .features-list {
   display: flex;
@@ -611,8 +614,8 @@ padding: 76px 1px 29px 1px;
 .features-list li {
   width: 400px;
   box-sizing: border-box;
-  padding-top: 60px;
-  padding-bottom: 68px;
+  padding-top: 140px;
+  padding-bottom: 70px;
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -626,6 +629,21 @@ padding: 76px 1px 29px 1px;
   padding-bottom: 45px;
 }
 
+.features-list-item {
+  position: relative;
+}
+
+.description-picture {
+  position: absolute;
+  top: 18%;
+  left: 41%;
+}
+
+.gift {
+  top: 17%;
+  left: 42%;
+}
+
 .hotel-helper {
   position: relative;
   padding-top: 1px;
@@ -636,20 +654,70 @@ padding: 76px 1px 29px 1px;
 .pop-up {
   width: 568px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(0);
   position: absolute;
-  background-color: #ffffff;
   padding: 55px 55px;
   box-sizing: border-box;
-  animation: bounce 0.6s;
+  background-color: #ffffff;
+  animation: appearance 0.7s;
+}
+
+@keyFrames appearance {
+  0% {
+    transform: translateY(-104px) translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px) translateX(-50%);
+    opacity: 1;
+  }
 }
 
 .modal-close {
+animation: appearance-reverse 0.6s;
+  animation-direction: reverse;
+}
+
+
+@keyFrames appearance-reverse {
+  0% {
+    transform: translateY(-104px) translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px) translateX(-50%);
+    opacity: 1;
+  }
+}
+
+.modal-hide {
   display: none;
 }
 
 .modal-error {
+  animation: shake 0.5s;
+}
 
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-48%) translateY(0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-52%) translateY(0);
+  }
 }
 
 .form-field {
@@ -694,6 +762,7 @@ padding: 76px 1px 29px 1px;
 .map {
   min-height: 585px;
   background-image: url("../img/map.png");
+  background-color: #c6e8b7;
 }
 
 .footer {
@@ -715,33 +784,33 @@ padding: 76px 1px 29px 1px;
 .hotel-criteria {
   display: flex;
   padding-top: 25px;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
   padding-left: 60px;
   padding-right: 72px;
   background-image: url("../img/filterbackground.jpg");
+  background-color: #81b3d2;
   background-position: center -185px;
 }
 
 .infrastructure {
   margin-right: 96px;
-  display: flex;
   border: none;
 }
 
 .type-hotel {
-  display: flex;
   border: none;
 }
 
 .filter-range {
-  width: 320px;
+  width: 317px;
   margin-left: auto;
-  color: #ffffff;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 .filter-range-title {
   margin-bottom: 9px;
+  padding-top: 3px;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -749,7 +818,7 @@ padding: 76px 1px 29px 1px;
 
 .price-controls {
   position: relative;
-  height: 36px;
+  height: 32px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
@@ -770,15 +839,19 @@ padding: 76px 1px 29px 1px;
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 33px;
   vertical-align: top;
   cursor: pointer;
 }
 
-.price-controls .min-price,
+.price-controls .min-price {
+  width: 90px;
+  padding-left: 64px;
+}
+
 .price-controls .max-price {
   width: 90px;
-  padding-left: 65px;
+  padding-left: 56px;
 }
 
 .price-controls input {
@@ -840,24 +913,25 @@ padding: 76px 1px 29px 1px;
   padding: 6px 35px;
   font-size: 14px;
   line-height: 20px;
-  color: #ffffff;
   text-transform: uppercase;
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
+  transform: translateX(-5px);
+  color: #ffffff;
 }
 
 .btn-transparent:hover {
+  transition: 0.3s;
   color: #000000;
   background: #ffffff;
-  transition: 0.3s;
 }
 
 .results {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 8px;
+  padding-top: 10px;
   padding-bottom: 8px;
   padding-left: 72px;
   padding-right: 72px;
@@ -885,12 +959,16 @@ padding: 76px 1px 29px 1px;
 
 .hotel-list li {
   display: flex;
-  padding:30px 72px 25px 72px;
+  padding: 28px 72px 25px 72px;
   border-top: 1px solid #e5e5e5;
 }
 
 .hotel-list li:last-child {
   border-bottom: 1px solid #e5e5e5;
+}
+
+.statistics span {
+  margin-left: 1px;
 }
 
 .statistics {
@@ -903,9 +981,9 @@ padding: 76px 1px 29px 1px;
 
 .rating {
   display: block;
-  background-color: #f2f2f2;
   padding: 2px 15px;
   margin-bottom: 5px;
+  background-color: #f2f2f2;
 }
 
 .hotel-photo {
@@ -937,8 +1015,8 @@ padding: 76px 1px 29px 1px;
 }
 
 .hotel-name-link:hover {
-  color: #81b3d2;
   transition: 0.3s;
+  color: #81b3d2;
 }
 
 .hotel-name-link:active {
@@ -949,3 +1027,4 @@ iframe {
   border: none;
   frameborder: none;
 }
+
