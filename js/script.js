@@ -20,11 +20,13 @@ search.addEventListener("click", function (evt) {
     popup.classList.add("modal-close");
     setTimeout(function () {
       popup.classList.add("modal-hide");
-      popup.classList.remove("modal-close");
     }, 600);
   }
   else {
     popup.classList.remove("modal-hide");
+    setTimeout(function () {
+      popup.classList.remove("modal-close");
+    }, 600);
   }
 });
 
