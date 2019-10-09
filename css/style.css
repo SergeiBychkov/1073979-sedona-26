@@ -191,6 +191,8 @@ a {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 
+  height: 38px;
+
   text-transform: uppercase;
 
   border: none;
@@ -268,13 +270,13 @@ a {
 }
 
 .button-plus {
-  top: 4px;
-  left: 85px;
+  top: 3px;
+  left: 83px;
 }
 
 .button-minus {
-  top: 4px;
-  left: 5px;
+  top: 2px;
+  left: 8px;
 }
 
 .button-search {
@@ -367,7 +369,7 @@ a {
   opacity: .3;
 }
 
-.websiteA {
+.footer-copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,7 +379,7 @@ a {
   align-items: center;
 }
 
-.webBy {
+.web-by {
   font-size: 14px;
   line-height: 26px;
 
